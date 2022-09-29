@@ -1,0 +1,28 @@
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    int T,N,L,X,p;
+    
+    cin>>T;
+    for(int i=0; i<T; i++)
+    {
+        cin>>N>>L>>X;
+        int R=N-L;
+        
+        if(R<L)
+        {
+            p=R;
+        }
+        
+        else
+        {
+            p=L;
+        }
+        
+        cout<<p*X<<endl;
+    
+    }
+    return 0;
+}
